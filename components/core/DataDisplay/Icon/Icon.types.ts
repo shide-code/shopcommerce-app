@@ -1,0 +1,18 @@
+export type TypeIcons =
+	| "Menu"
+	| "Home"
+	| "InfoCircle"
+	| "MinusCircle"
+	| "Eye"
+	| "EyeClosed"
+	| "Erase"
+	| "CheckCircle"
+	| "Download"
+	| "Refresh"
+	| "ShareAndroid"
+	| "ShareAndroidSolid"
+	| "ShareIos"
+	| "Trash"
+	| "Undo"
+	| "WarningCircle"
+	| "XmarkCircle";

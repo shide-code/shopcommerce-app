@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Getting Started
 
-## Getting Started
+Next JS Documentation: [Next Js](https://nextjs.org/)
 
-First, run the development server:
+## Environment
+
+Create an `.env.local` file in the root folder then copy everything from the `env.example` file into `env.local`.
+
+## Installation
+
+For installation all dependency use command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Run Server
 
-## Learn More
+```bash
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Architecure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application architecture for this project is similar to using MVC (Model, View, Controller) but is customized according to project needs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<pre>
+|-- .storybook
+    |-- main.ts
+    |-- preview.ts
+|-- app                           
+    |-- global.css               
+    |-- layout.tsx
+|-- configs
+    |-- App.config.ts
+|-- components
+    |-- core                     
+        |-- DataAction           
+        |-- DataDisplay          
+        |-- DataInput
+    |-- templates
+|-- hooks
+|-- public
+    |-- illustrations
+    |-- images
+|-- services
+|-- themes
+    |-- colors.ts
+</pre>
 
-## Deploy on Vercel
+## Create a new pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For create a new page you can create folder / file in `app` folder example:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<pre>
+|-- Customer
+    |-- page.tsx
+</pre>
+
+`page.tsx` is root file which will be read by the Next JS Router. But in this file specifically for templating there should be no logic in it.
+
+## Templating
+
+To do templating, in the `templates` folder in the `components` folder, name the folder according to the name of the page. Example you can add Navbar section for a module Merchant
+
+<pre>
+|-- templates
+    |-- Customer
+        |-- Navbar
+            |-- Navbar.tsx
+            |-- index.ts
+        |-- index.ts
+    |-- index.ts
+</pre>
+
+and on the index.ts file in the templates folder, do an export like this
+
+```ts
+export * as Customer from "./Merchant";
+```
+
+So when calling a component on the page, just call it like this:
+
+```tsx
+<Customer.Navbar />
+```
+
+## Business Logic
+
+For business logic on the page, we can create it in hooks, so all business logic will be stored in separate files so that it is not combined with templating, but can be integrated with templating under certain conditions
+
+<pre>
+|-- Customer
+    |-- hooks
+        |-- useCustomer.ts
+        |-- index.ts
+    |-- page.tsx
+</pre>

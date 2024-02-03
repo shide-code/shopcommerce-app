@@ -1,0 +1,45 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Icon from "./Icon.stories.ts";
+
+<Meta of={Icon} title="Icon" />
+
+# Icon
+
+Icon Component
+
+### Example
+
+#### Basic Usage
+
+<Canvas of={Icon.Defaults} />
+
+#### Change Size of Icon
+
+<Canvas of={Icon.IconWithSize} />
+
+#### Change Color of Icon
+
+<Canvas of={Icon.IconWithColor} />
+
+## Usage
+
+```ts
+import { Icon } from "sld-ui";
+
+const Example = () => {
+	return (
+		<div>
+			<Icon name="CheckCircle" />
+			<Icon
+				name="Home"
+				className="-text--accent-normal"
+				width={42}
+				height={42}
+			/>
+		</div>
+	);
+};
+
+export default Example;
+```

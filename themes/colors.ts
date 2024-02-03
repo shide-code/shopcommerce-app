@@ -1,69 +1,138 @@
 export const colorsTheme = {
-	"--accent": {
-		normal: "#3B82F6",
-		hover: "#60A5FA",
-		press: "#2563EB",
-		active: "#3B82F6",
-		border: "#DBEAFE",
-		surface: "#EFF6FF",
+	accent: {
+		normal: "#0B63F4",
+		hover: "#0954CD",
+		press: "#073C92",
+		focus: "#3B82F6",
+		active: "#0B63F4",
 	},
 
-	"--informative": {
-		surface: "#F0F9FF",
-		"surface-banner": "#0284C7",
-		"surface-icon-banner": "#0369A1",
-		text: "#0C4A6E",
-		icon: "#0EA5E9",
-		"icon-banner": "#F0F9FF",
-		border: "#E0F2FE",
+	surface: {
+		layer: {
+			1: "#F8F8F8",
+			2: "#FFFFFF",
+		},
 	},
 
-	"--positive": {
-		surface: "#ECFDF5",
-		"surface-fill": "#10B981",
-		text: "#064E3B",
-		"text-hint": "#047857",
-		border: "#D1FAE5",
-		"border-fill": "#10B981",
-		icon: "#059669",
-		"strong-indicator": "#059669",
+	text: {
+		high: "#222222",
+		medium: "#6D6D6D",
+		low: "#909090",
+		disable: "#B1B1B1",
 	},
 
-	"--negative": {
-		suraface: "#FEF2F2",
-		text: "#7F1D1D",
-		"text-error": "#DC2626",
-		icon: "#DC2626",
-		border: "#FEE2E2",
-		"border-field": "#F87171",
-		button: "#EF4444",
+	border: {
+		high: "#D5D5D5",
+		low: "#E6E6E6",
 	},
 
-	"--notice": {
-		surface: "#FFFBEB",
-		text: "#78350F",
-		icon: "#D97706",
-		border: "#FEF3C7",
+	button: {
+		border: "#D5D5D5",
+		text: "#E6E6E6",
+		disable: {
+			surface: "#E6E6E6",
+			text: "#E6E6E6",
+		},
 	},
 
-	"--surface": {
-		1: "#FFFFFF",
-		2: "#FAFBFC",
-		3: "#F5F7FA",
-		4: "#F0F3F7",
-		5: "#EBEFF5",
+	icon: {
+		fill: "#222222",
+		surface: {
+			hover: "#F8F8F8",
+		},
 	},
 
-	"--text": {
-		high: "#0F172A",
-		medium: "#64748B",
-		low: "#CBD5E1",
-		disable: "#E2E8F0",
+	form: {
+		label: "#222222",
+		surface: "#FFFFFF",
+		placeholder: "#D5D5D5",
+		text: {
+			field: "#222222",
+		},
+		icon: "#464646",
+		border: "#D5D5D5",
+		hover: "#909090",
+		addon: {
+			text: "#909090",
+			surface: "#F8F8F8",
+		},
+		disable: {
+			text: "#D5D5D5",
+			surface: "#F8F8F8",
+			border: "#909090",
+		},
+		dropdown: {
+			text: "#222222",
+		},
+		hint: {
+			text: "#6D6D6D",
+		},
+		toggle: {
+			off: {
+				surface: "#E6E6E6",
+				switch: "#FFFFFF",
+			},
+		},
 	},
 
-	"--border": {
-		high: "#E2E8F0",
-		medium: "#F1F5F9",
-		low: "#F8FAFC",
+	informative: {
+		surface: {
+			DEFAULT: "#FAF6FE",
+			banner: "#CCA6F2",
+			icon: {
+				banner: "#994DE5",
+			},
+		},
+
+		text: {
+			DEFAULT: "#380E62",
+			banner: "#FAF6FE",
+		},
+
+		icon: {
+			DEFAULT: "#8529E0",
+			banner: "#FAF6FE",
+		},
+
+		border: "#E0C9F7",
+	},
+
+	positive: {
+		surface: {
+			DEFAULT: "#F7FDF9",
+			fill: "#2BAB5E",
+		},
+
+		text: {
+			DEFAULT: "#165A31",
+			hint: "#2BAB5E",
+		},
+
+		border: {
+			DEFAULT: "#CEF3DD",
+			fill: "#2BAB5E",
+		},
+
+		icon: "#2BAB5E",
+
+		strong: {
+			indicator: "#2BAB5E",
+		},
+	},
+
+	negative: {
+		surface: "#FEF7F6",
+		text: {
+			DEFAULT: "#671909",
+			error: "#EF6044",
+		},
+
+		icon: "#EC401D",
+		border: {
+			DEFAULT: "#FACFC7",
+			field: "#EF6044",
+		},
+
+		button: "#EC401D",
 	},
 };

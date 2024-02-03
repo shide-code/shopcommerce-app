@@ -1,0 +1,25 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Typography from "./Typography.stories.ts";
+
+<Meta of={Typography} title="Typography" />
+
+# Icon
+
+Typography Component
+
+### Example
+
+<Canvas of={Typography.Defaults} />
+
+## Usage
+
+```ts
+import { Typography } from "sld-ui";
+
+const Example = () => {
+	return <Typography variants="h1">Hello World</Typography>;
+};
+
+export default Example;
+```

@@ -34,15 +34,15 @@ The application architecture for this project is similar to using MVC (Model, Vi
 |-- .storybook
     |-- main.ts
     |-- preview.ts
-|-- app                           
-    |-- global.css               
+|-- app
+    |-- global.css
     |-- layout.tsx
 |-- configs
     |-- App.config.ts
 |-- components
-    |-- core                     
-        |-- DataAction           
-        |-- DataDisplay          
+    |-- core     
+        |-- DataAction
+        |-- DataDisplay
         |-- DataInput
     |-- templates
 |-- hooks
@@ -64,6 +64,14 @@ For create a new page you can create folder / file in `app` folder example:
 </pre>
 
 `page.tsx` is root file which will be read by the Next JS Router. But in this file specifically for templating there should be no logic in it.
+
+## Components
+
+For the documentation component create with storybook, so you can run command:
+
+```bash
+yarn storybook
+```
 
 ## Templating
 

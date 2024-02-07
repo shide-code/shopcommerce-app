@@ -1,9 +1,13 @@
 export type TagVariants =
-	| "h1"
-	| "h2"
-	| "h3"
-	| "h4"
-	| "h5"
-	| "h6"
-	| "p"
-	| "span";
+	| "typography--dis-lg"
+	| "typography--dis-sm"
+	| "typography--h1"
+	| "typography--h2"
+	| "typography--h3"
+	| "typography--h4"
+	| "typography--h5"
+	| "typography--h6"
+	| "typography--p-lg"
+	| "typography--p-base"
+	| "typography--p-sm"
+	| "typography--p-xl";

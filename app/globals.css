@@ -2,14 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
-}
-
 @layer base {
-	.typography-h1 {
-		@apply text-4xl;
+	.typography--dis-lg {
+		@apply text-6xl;
+	}
+
+	.typography--dis-sm {
+		@apply text-5xl;
+	}
+
+	.typography--h1 {
+		@apply text-3xl md:text-4xl lg:text-4xl;
+	}
+
+	.typography--h2 {
+		@apply text-2xl md:text-3xl lg:text-3xl;
+	}
+
+	.typography--h3 {
+		@apply text-xl md:text-2xl lg:text-2xl;
+	}
+
+	.typography--h4 {
+		@apply text-lg md:text-xl lg:text-xl;
+	}
+
+	.typography--h5 {
+		@apply text-base md:text-lg lg:text-lg;
+	}
+
+	.typography--h6 {
+		@apply text-sm md:text-base lg:text-base;
+	}
+
+	.form--text-field {
+		@apply text-sm;
+	}
+
+	.form--addon-text {
+		@apply text-sm;
+	}
+
+	.form--otp-field {
+		@apply text-2xl;
+	}
+
+	.typography--p-lg {
+		@apply text-lg;
+	}
+
+	.typography--p-base {
+		@apply text-base;
+	}
+
+	.typography--p-sm {
+		@apply text-sm;
+	}
+
+	.typography--p-xl {
+		@apply text-xl;
+	}
+
+	.typography--btn-xl {
+		@apply text-xl;
+	}
+
+	.typography--btn-lg {
+		@apply text-lg;
+	}
+
+	.typography--btn-base {
+		@apply text-base;
+	}
+
+	.typography--btn-sm {
+		@apply text-sm;
+	}
+
+	.typography--btn-xs {
+		@apply text-xs;
 	}
 }

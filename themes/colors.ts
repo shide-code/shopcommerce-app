@@ -1,138 +1,113 @@
 export const colorsTheme = {
+	// Accent Color
 	accent: {
-		normal: "#0B63F4",
-		hover: "#0954CD",
-		press: "#073C92",
-		focus: "#3B82F6",
-		active: "#0B63F4",
+		normal: "#8B5CF6",
+		hover: "#A78BFA",
+		press: "#7C3AED",
+		active: "#8B5CF6",
+		border: "#EDE9FE",
+		surface: "#F5F3FF",
 	},
 
-	surface: {
-		layer: {
-			1: "#F8F8F8",
-			2: "#FFFFFF",
-		},
-	},
-
-	text: {
-		high: "#222222",
-		medium: "#6D6D6D",
-		low: "#909090",
-		disable: "#B1B1B1",
-	},
-
-	border: {
-		high: "#D5D5D5",
-		low: "#E6E6E6",
-	},
-
-	button: {
-		border: "#D5D5D5",
-		text: "#E6E6E6",
-		disable: {
-			surface: "#E6E6E6",
-			text: "#E6E6E6",
-		},
-	},
-
-	icon: {
-		fill: "#222222",
-		surface: {
-			hover: "#F8F8F8",
-		},
-	},
-
-	form: {
-		label: "#222222",
-		surface: "#FFFFFF",
-		placeholder: "#D5D5D5",
-		text: {
-			field: "#222222",
-		},
-		icon: "#464646",
-		border: "#D5D5D5",
-		hover: "#909090",
-		addon: {
-			text: "#909090",
-			surface: "#F8F8F8",
-		},
-		disable: {
-			text: "#D5D5D5",
-			surface: "#F8F8F8",
-			border: "#909090",
-		},
-		dropdown: {
-			text: "#222222",
-		},
-		hint: {
-			text: "#6D6D6D",
-		},
-		toggle: {
-			off: {
-				surface: "#E6E6E6",
-				switch: "#FFFFFF",
-			},
-		},
-	},
-
+	// Informative
 	informative: {
 		surface: {
-			DEFAULT: "#FAF6FE",
-			banner: "#CCA6F2",
+			DEFAULT: "#F0F9FF",
+			banner: "#0284C7",
 			icon: {
-				banner: "#994DE5",
+				banner: "#0369A1",
 			},
 		},
 
 		text: {
-			DEFAULT: "#380E62",
-			banner: "#FAF6FE",
+			DEFAULT: "#0C4A6E",
+			banner: "#F0F9FF",
 		},
 
 		icon: {
-			DEFAULT: "#8529E0",
-			banner: "#FAF6FE",
+			DEFAULT: "#0EA5E9",
+			banner: "#F0F9FF",
 		},
 
-		border: "#E0C9F7",
+		border: "#E0F2FE",
 	},
 
+	// Positive
 	positive: {
 		surface: {
-			DEFAULT: "#F7FDF9",
-			fill: "#2BAB5E",
+			DEFAULT: "#ECFDF5",
+			fill: "#10B981",
 		},
 
 		text: {
-			DEFAULT: "#165A31",
-			hint: "#2BAB5E",
+			DEFAULT: "#064E3B",
+			hint: "#047857",
 		},
 
 		border: {
-			DEFAULT: "#CEF3DD",
-			fill: "#2BAB5E",
+			DEFAULT: "#D1FAE5",
+			fill: "#10B981",
 		},
 
-		icon: "#2BAB5E",
+		icon: "#059669",
 
 		strong: {
-			indicator: "#2BAB5E",
+			indicator: "#059669",
 		},
 	},
 
+	// Negative
 	negative: {
-		surface: "#FEF7F6",
+		surface: "#FEF2F2",
 		text: {
-			DEFAULT: "#671909",
-			error: "#EF6044",
+			DEFAULT: "#7F1D1D",
+			error: "#DC2626",
 		},
-
-		icon: "#EC401D",
+		icon: "#DC2626",
 		border: {
-			DEFAULT: "#FACFC7",
-			field: "#EF6044",
+			DEFAULT: "#FEE2E2",
+			field: "#F87171",
 		},
+		button: "#EF4444",
+	},
 
-		button: "#EC401D",
+	// Notice
+	notice: {
+		surface: "#FFFBEB",
+		text: "#78350F",
+		icon: {
+			DEFAULT: "#D97706",
+			normal: "#F59E0B",
+		},
+		border: "#FEF3C7",
+	},
+
+	surface: {
+		1: "#FFFFFF",
+		2: "#F5F7FA",
+		3: "#EBEFF5",
+		4: "#E1E7F0",
+		5: "#E0E5EF",
+	},
+
+	text: {
+		high: "#0F172A",
+		medium: "#64748B",
+		low: "#CBD5E1",
+		disable: "#E2E8F0",
+	},
+
+	form: {
+		label: "#0F172A",
+		border: "#CBD5E1",
+		placeholder: "#94A3B8",
+		text: "#0F172A",
+		icon: "#2F3952",
+	},
+
+	button: {
+		onsurface: "#FFFFFF",
+		disable: "#CBD5E1",
+		border: "#CBD5E1",
 	},
 };

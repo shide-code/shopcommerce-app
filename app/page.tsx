@@ -3,6 +3,7 @@ import { Icon, Typograhpy } from "@/components";
 export default function Home() {
 	return (
 		<main>
+			<Icon name="Accessibility" />
 			<Typograhpy variant="typography--dis-lg" className="font-bold">
 				Hello World
 			</Typograhpy>

@@ -1,0 +1,43 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Button from "./Button.stories.ts";
+
+<Meta of={Button} title="Button" />
+
+# Button
+
+Button Component
+
+### Example
+
+#### Basic Usage
+
+<Canvas of={Button.Defaults} />
+<Canvas of={Button.Informative} />
+<Canvas of={Button.Negative} />
+<Canvas of={Button.Positive} />
+<Canvas of={Button.Notice} />
+<Canvas of={Button.Disable} />
+
+<Canvas of={Button.DefaultOutlined} />
+<Canvas of={Button.InformativeOutlined} />
+<Canvas of={Button.NegativeOutlined} />
+<Canvas of={Button.PositiveOutlined} />
+<Canvas of={Button.NoticeOutlined} />
+<Canvas of={Button.DisableOutlined} />
+
+## Usage
+
+```ts
+import { Button } from "sld-ui";
+
+const Example = () => {
+	return (
+		<div>
+			<Button text="Click ME !!!" backgroundTheme="accent" />
+		</div>
+	);
+};
+
+export default Example;
+```

@@ -5,4 +5,5 @@ export interface ITypography {
 	variant?: TagVariants;
 	children: ReactNode;
 	className?: string;
+	onClick?: () => void
 }

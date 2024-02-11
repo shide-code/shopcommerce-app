@@ -83,3 +83,9 @@
 		@apply text-xs;
 	}
 }
+
+@layer components {
+	.base--btn {
+		@apply text-sm md:text-base lg:text-base w-full text-center py-2 font-semibold focus:outline-none;
+	}
+}

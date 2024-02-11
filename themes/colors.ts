@@ -11,6 +11,7 @@ export const colorsTheme = {
 
 	// Informative
 	informative: {
+		normal: "#0284C7",
 		surface: {
 			DEFAULT: "#F0F9FF",
 			banner: "#0284C7",
@@ -34,6 +35,7 @@ export const colorsTheme = {
 
 	// Positive
 	positive: {
+		normal: "#10B981",
 		surface: {
 			DEFAULT: "#ECFDF5",
 			fill: "#10B981",
@@ -58,6 +60,7 @@ export const colorsTheme = {
 
 	// Negative
 	negative: {
+		normal: "#DC2626",
 		surface: "#FEF2F2",
 		text: {
 			DEFAULT: "#7F1D1D",
@@ -73,6 +76,7 @@ export const colorsTheme = {
 
 	// Notice
 	notice: {
+		normal: "#F59E0B",
 		surface: "#FFFBEB",
 		text: "#78350F",
 		icon: {

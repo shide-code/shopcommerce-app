@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { ITypography } from ".";
 
-export const Typograhpy = (_props: ITypography) => {
+const DefaultTypography = (_props: ITypography) => {
 	const { variant, className, children } = _props;
 	const tagVariant = variant?.split("typography--")[1];
 
@@ -35,3 +36,5 @@ export const Typograhpy = (_props: ITypography) => {
 
 	return <WrappComponent />;
 };
+
+export const Typography = memo(DefaultTypography, (prevProps, nextProps) => prevProps.variant === nextProps.variant || prevProps.className !== nextProps.className)
